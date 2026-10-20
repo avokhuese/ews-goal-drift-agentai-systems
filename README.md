@@ -9,15 +9,16 @@ discrete-time map on semantic space. We extract five per-turn observables
 without architectural modification; goal drift, query novelty, query step
 distance, evidence entropy, and retrieval off-topicness, and apply classical
 early-warning indicators (rolling variance, lag-1 autocorrelation, skewness,
-and Kendall-$\tau$ trends) to each. A Stuart--Landau normal form is fitted to
+and Kendall-rank trends) to each. A Stuart-Landau normal form is fitted to
 the PCA-projected semantic trajectory as a diagnostic for a Hopf-type critical
 transition. The prototype ships a corpus-aware mock LLM backends behind one loop. On a representative 60-turn episode we observe a sharp regime
 change in the semantic channel and strongly heterogeneous early-warning
 behaviour: goal drift and retrieval off-topicness show rising variance
-(Kendall-$\tau \approx +0.67$) while query novelty and evidence entropy
+(Kendall-rank = +0.67$) while query novelty and evidence entropy
 move in the opposite direction, and lag-1 autocorrelation is flat or negative
 on every signal. No single observable is a reliable detector, which motivates
 multi-signal monitoring. 
+
 ## How to Run
 pip install -r requirements.txt
 
