@@ -1,3 +1,6 @@
+# Early-Warning Signals for Critical Transitions in Agentic AI Systems
+
+## How to Run
 pip install -r requirements.txt
 
 # Default: mock LLM, TF-IDF embeddings, no API key needed
