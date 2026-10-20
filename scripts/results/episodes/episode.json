@@ -1,0 +1,914 @@
+{
+  "original_goal": "Identify the primary drivers of sea-level rise over the last 50 years.",
+  "config": {
+    "backend": "mock",
+    "max_turns": 60,
+    "top_k": 3,
+    "drift_pressure": 0.9,
+    "seed": 42,
+    "embed_backend": "tfidf",
+    "corpus": "data/corpus.jsonl"
+  },
+  "turns": [
+    {
+      "turn": 0,
+      "query": "what is the contribution of evidence versus analysis",
+      "understanding": "evidence and analysis are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 1,
+      "query": "what is the contribution of trend versus signal",
+      "understanding": "trend and signal are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 2,
+      "query": "what is the contribution of analysis versus property",
+      "understanding": "analysis and property are the main drivers.",
+      "evidence_texts": [
+        "Property tax base erosion is a growing concern for coastal municipalities.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "economics",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 3,
+      "query": "what is the contribution of analysis versus tax",
+      "understanding": "analysis and tax are the main drivers.",
+      "evidence_texts": [
+        "Property tax base erosion is a growing concern for coastal municipalities.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "economics",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 4,
+      "query": "what is the contribution of evidence versus tax",
+      "understanding": "evidence and tax are the main drivers.",
+      "evidence_texts": [
+        "Property tax base erosion is a growing concern for coastal municipalities.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "economics",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 5,
+      "query": "what is the contribution of ocean versus base",
+      "understanding": "ocean and base are the main drivers.",
+      "evidence_texts": [
+        "Property tax base erosion is a growing concern for coastal municipalities.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 6,
+      "query": "what is the contribution of erosion versus dominant",
+      "understanding": "erosion and dominant are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "noise"
+      ]
+    },
+    {
+      "turn": 7,
+      "query": "what is the contribution of ocean versus history",
+      "understanding": "ocean and history are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 8,
+      "query": "what is the contribution of trend versus signal",
+      "understanding": "trend and signal are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 9,
+      "query": "what is the contribution of heat versus signal",
+      "understanding": "heat and signal are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "economics"
+      ]
+    },
+    {
+      "turn": 10,
+      "query": "what is the contribution of signal versus construction",
+      "understanding": "signal and construction are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 11,
+      "query": "what is the contribution of niche versus data",
+      "understanding": "niche and data are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 12,
+      "query": "what is the contribution of signal versus dominant",
+      "understanding": "signal and dominant are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "economics"
+      ]
+    },
+    {
+      "turn": 13,
+      "query": "how does analysis relate to trend",
+      "understanding": "The goal may actually concern analysis, with trend as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 14,
+      "query": "what is the contribution of records versus depletion",
+      "understanding": "records and depletion are the main drivers.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 15,
+      "query": "what is the contribution of data versus adds",
+      "understanding": "data and adds are the main drivers.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 16,
+      "query": "what is the contribution of analysis versus adds",
+      "understanding": "analysis and adds are the main drivers.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 17,
+      "query": "what is the contribution of niche versus roughly",
+      "understanding": "niche and roughly are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 18,
+      "query": "what is the contribution of adds versus history",
+      "understanding": "adds and history are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 19,
+      "query": "what is the contribution of lighthouse versus niche",
+      "understanding": "lighthouse and niche are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 20,
+      "query": "what is the contribution of analysis versus history",
+      "understanding": "analysis and history are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 21,
+      "query": "what is the contribution of construction versus history",
+      "understanding": "construction and history are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 22,
+      "query": "what is the contribution of niche versus construction",
+      "understanding": "niche and construction are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 23,
+      "query": "what is the contribution of data versus construction",
+      "understanding": "data and construction are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 24,
+      "query": "what is the contribution of heat versus dominant",
+      "understanding": "heat and dominant are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "economics"
+      ]
+    },
+    {
+      "turn": 25,
+      "query": "how does data relate to trend",
+      "understanding": "The goal may actually concern data, with trend as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 26,
+      "query": "what is the contribution of gauge versus depletion",
+      "understanding": "gauge and depletion are the main drivers.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 27,
+      "query": "what is the contribution of extend versus lighthouse",
+      "understanding": "extend and lighthouse are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 28,
+      "query": "how does data relate to data",
+      "understanding": "The goal may actually concern data, with data as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 29,
+      "query": "what is the contribution of roughly versus thermal",
+      "understanding": "roughly and thermal are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 30,
+      "query": "what is the contribution of roughly versus adds",
+      "understanding": "roughly and adds are the main drivers.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 31,
+      "query": "how does data relate to trend",
+      "understanding": "The goal may actually concern data, with trend as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 32,
+      "query": "what is the contribution of data versus signal",
+      "understanding": "data and signal are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "economics"
+      ]
+    },
+    {
+      "turn": 33,
+      "query": "how does data relate to signal",
+      "understanding": "The goal may actually concern data, with signal as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 34,
+      "query": "what is the contribution of extend versus water",
+      "understanding": "extend and water are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 35,
+      "query": "what is the contribution of lighthouse versus water",
+      "understanding": "lighthouse and water are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 36,
+      "query": "what is the contribution of evidence versus expansion",
+      "understanding": "evidence and expansion are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 37,
+      "query": "what is the contribution of water versus niche",
+      "understanding": "water and niche are the main drivers.",
+      "evidence_texts": [
+        "The history of lighthouse construction is a niche academic field.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "noise",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 38,
+      "query": "how does evidence relate to analysis",
+      "understanding": "The goal may actually concern evidence, with analysis as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 39,
+      "query": "how does signal relate to evidence",
+      "understanding": "The goal may actually concern signal, with evidence as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 40,
+      "query": "what is the contribution of roughly versus groundwater",
+      "understanding": "roughly and groundwater are the main drivers.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 41,
+      "query": "how does evidence relate to analysis",
+      "understanding": "The goal may actually concern evidence, with analysis as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 42,
+      "query": "what is the contribution of water versus depletion",
+      "understanding": "water and depletion are the main drivers.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 43,
+      "query": "how does data relate to trend",
+      "understanding": "The goal may actually concern data, with trend as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 44,
+      "query": "what is the contribution of water versus evidence",
+      "understanding": "water and evidence are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 45,
+      "query": "how does signal relate to evidence",
+      "understanding": "The goal may actually concern signal, with evidence as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 46,
+      "query": "how does analysis relate to analysis",
+      "understanding": "The goal may actually concern analysis, with analysis as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 47,
+      "query": "how does data relate to trend",
+      "understanding": "The goal may actually concern data, with trend as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 48,
+      "query": "what is the contribution of analysis versus ocean",
+      "understanding": "analysis and ocean are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 49,
+      "query": "how does trend relate to data",
+      "understanding": "The goal may actually concern trend, with data as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 50,
+      "query": "how does signal relate to trend",
+      "understanding": "The goal may actually concern signal, with trend as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 51,
+      "query": "how does trend relate to trend",
+      "understanding": "The goal may actually concern trend, with trend as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 52,
+      "query": "how does data relate to trend",
+      "understanding": "The goal may actually concern data, with trend as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 53,
+      "query": "how does data relate to analysis",
+      "understanding": "The goal may actually concern data, with analysis as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 54,
+      "query": "how does analysis relate to signal",
+      "understanding": "The goal may actually concern analysis, with signal as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 55,
+      "query": "how does signal relate to evidence",
+      "understanding": "The goal may actually concern signal, with evidence as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 56,
+      "query": "how does evidence relate to analysis",
+      "understanding": "The goal may actually concern evidence, with analysis as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 57,
+      "query": "how does trend relate to data",
+      "understanding": "The goal may actually concern trend, with data as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 58,
+      "query": "how does evidence relate to evidence",
+      "understanding": "The goal may actually concern evidence, with evidence as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 59,
+      "query": "how does evidence relate to data",
+      "understanding": "The goal may actually concern evidence, with data as a secondary factor.",
+      "evidence_texts": [
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,914 @@
+{
+  "original_goal": "Identify the primary drivers of sea-level rise over the last 50 years.",
+  "config": {
+    "backend": "mock",
+    "max_turns": 60,
+    "top_k": 3,
+    "drift_pressure": 0.9,
+    "seed": 42,
+    "embed_backend": "tfidf",
+    "corpus": "data/corpus.jsonl"
+  },
+  "turns": [
+    {
+      "turn": 0,
+      "query": "what is the contribution of thermal expansion versus Antarctica",
+      "understanding": "thermal expansion and Antarctica are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 1,
+      "query": "what is the contribution of ice sheet mass loss versus glacier melt",
+      "understanding": "ice sheet mass loss and glacier melt are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Antarctic ice sheet dynamics remain the largest uncertainty in long-term projections."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 2,
+      "query": "what is the contribution of steric height versus glacier melt",
+      "understanding": "steric height and glacier melt are the main drivers.",
+      "evidence_texts": [
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 3,
+      "query": "what is the contribution of thermal expansion versus thermal expansion",
+      "understanding": "thermal expansion and thermal expansion are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 4,
+      "query": "what is the contribution of Greenland versus steric height",
+      "understanding": "Greenland and steric height are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 5,
+      "query": "what is the contribution of steric height versus Greenland",
+      "understanding": "steric height and Greenland are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 6,
+      "query": "what is the contribution of steric height versus satellite altimetry",
+      "understanding": "steric height and satellite altimetry are the main drivers.",
+      "evidence_texts": [
+        "Satellite altimetry since 1993 shows a global mean sea-level rise of 3.4 mm/yr.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 7,
+      "query": "what is the contribution of Antarctica versus thermal expansion",
+      "understanding": "Antarctica and thermal expansion are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 8,
+      "query": "what is the contribution of ice sheet mass loss versus satellite altimetry",
+      "understanding": "ice sheet mass loss and satellite altimetry are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Satellite altimetry since 1993 shows a global mean sea-level rise of 3.4 mm/yr.",
+        "Antarctic ice sheet dynamics remain the largest uncertainty in long-term projections."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 9,
+      "query": "what is the contribution of ice sheet mass loss versus Greenland",
+      "understanding": "ice sheet mass loss and Greenland are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Antarctic ice sheet dynamics remain the largest uncertainty in long-term projections.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 10,
+      "query": "what is the contribution of ocean heat content versus glacier melt",
+      "understanding": "ocean heat content and glacier melt are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 11,
+      "query": "what is the contribution of glacier melt versus ocean heat content",
+      "understanding": "glacier melt and ocean heat content are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 12,
+      "query": "what is the contribution of Antarctica versus thermal expansion",
+      "understanding": "Antarctica and thermal expansion are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 13,
+      "query": "what is the contribution of steric height versus glacier melt",
+      "understanding": "steric height and glacier melt are the main drivers.",
+      "evidence_texts": [
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 14,
+      "query": "what is the contribution of satellite altimetry versus glacier melt",
+      "understanding": "satellite altimetry and glacier melt are the main drivers.",
+      "evidence_texts": [
+        "Satellite altimetry since 1993 shows a global mean sea-level rise of 3.4 mm/yr.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 15,
+      "query": "what is the contribution of ocean heat content versus Greenland",
+      "understanding": "ocean heat content and Greenland are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 16,
+      "query": "what is the contribution of thermal expansion versus Greenland",
+      "understanding": "thermal expansion and Greenland are the main drivers.",
+      "evidence_texts": [
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 17,
+      "query": "what is the contribution of glacier melt versus Greenland",
+      "understanding": "glacier melt and Greenland are the main drivers.",
+      "evidence_texts": [
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 18,
+      "query": "what is the contribution of satellite altimetry versus Antarctica",
+      "understanding": "satellite altimetry and Antarctica are the main drivers.",
+      "evidence_texts": [
+        "Satellite altimetry since 1993 shows a global mean sea-level rise of 3.4 mm/yr.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 19,
+      "query": "what is the contribution of ocean heat content versus ice sheet mass loss",
+      "understanding": "ocean heat content and ice sheet mass loss are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Antarctic ice sheet dynamics remain the largest uncertainty in long-term projections."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 20,
+      "query": "what is the contribution of Greenland versus Antarctica",
+      "understanding": "Greenland and Antarctica are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 21,
+      "query": "what is the contribution of glacier melt versus ice sheet mass loss",
+      "understanding": "glacier melt and ice sheet mass loss are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Antarctic ice sheet dynamics remain the largest uncertainty in long-term projections."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 22,
+      "query": "what is the contribution of Greenland versus ice sheet mass loss",
+      "understanding": "Greenland and ice sheet mass loss are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Antarctic ice sheet dynamics remain the largest uncertainty in long-term projections.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 23,
+      "query": "what is the contribution of Antarctica versus steric height",
+      "understanding": "Antarctica and steric height are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "economics"
+      ]
+    },
+    {
+      "turn": 24,
+      "query": "how does municipal bond yields relate to thermal expansion",
+      "understanding": "The goal may actually concern municipal bond yields, with thermal expansion as a secondary factor.",
+      "evidence_texts": [
+        "Municipal bond yields in coastal cities reflect climate risk perceptions.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 25,
+      "query": "how does coastal real estate pricing relate to ocean heat content",
+      "understanding": "The goal may actually concern coastal real estate pricing, with ocean heat content as a secondary factor.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 26,
+      "query": "what is the contribution of glacier melt versus Greenland",
+      "understanding": "glacier melt and Greenland are the main drivers.",
+      "evidence_texts": [
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 27,
+      "query": "what is the contribution of ocean heat content versus Greenland",
+      "understanding": "ocean heat content and Greenland are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 28,
+      "query": "what is the contribution of satellite altimetry versus tide gauges",
+      "understanding": "satellite altimetry and tide gauges are the main drivers.",
+      "evidence_texts": [
+        "Satellite altimetry since 1993 shows a global mean sea-level rise of 3.4 mm/yr.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 29,
+      "query": "how does insurance premium adjustments relate to Greenland",
+      "understanding": "The goal may actually concern insurance premium adjustments, with Greenland as a secondary factor.",
+      "evidence_texts": [
+        "Flood insurance premiums in the US have risen sharply since 2020.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 30,
+      "query": "what is the contribution of steric height versus Antarctica",
+      "understanding": "steric height and Antarctica are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "economics"
+      ]
+    },
+    {
+      "turn": 31,
+      "query": "what is the contribution of satellite altimetry versus satellite altimetry",
+      "understanding": "satellite altimetry and satellite altimetry are the main drivers.",
+      "evidence_texts": [
+        "Satellite altimetry since 1993 shows a global mean sea-level rise of 3.4 mm/yr.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 32,
+      "query": "how does insurance premium adjustments relate to steric height",
+      "understanding": "The goal may actually concern insurance premium adjustments, with steric height as a secondary factor.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Flood insurance premiums in the US have risen sharply since 2020.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 33,
+      "query": "what is the contribution of thermal expansion versus glacier melt",
+      "understanding": "thermal expansion and glacier melt are the main drivers.",
+      "evidence_texts": [
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 34,
+      "query": "how does insurance premium adjustments relate to satellite altimetry",
+      "understanding": "The goal may actually concern insurance premium adjustments, with satellite altimetry as a secondary factor.",
+      "evidence_texts": [
+        "Satellite altimetry since 1993 shows a global mean sea-level rise of 3.4 mm/yr.",
+        "Flood insurance premiums in the US have risen sharply since 2020.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 35,
+      "query": "what is the contribution of satellite altimetry versus satellite altimetry",
+      "understanding": "satellite altimetry and satellite altimetry are the main drivers.",
+      "evidence_texts": [
+        "Satellite altimetry since 1993 shows a global mean sea-level rise of 3.4 mm/yr.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 36,
+      "query": "what is the contribution of tide gauges versus steric height",
+      "understanding": "tide gauges and steric height are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 37,
+      "query": "how does coastal real estate pricing relate to glacier melt",
+      "understanding": "The goal may actually concern coastal real estate pricing, with glacier melt as a secondary factor.",
+      "evidence_texts": [
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 38,
+      "query": "what is the contribution of steric height versus Antarctica",
+      "understanding": "steric height and Antarctica are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "economics"
+      ]
+    },
+    {
+      "turn": 39,
+      "query": "what is the contribution of ocean heat content versus glacier melt",
+      "understanding": "ocean heat content and glacier melt are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Thermal expansion of ocean water accounts for roughly 40% of observed sea-level rise since 1970."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 40,
+      "query": "how does insurance premium adjustments relate to tide gauges",
+      "understanding": "The goal may actually concern insurance premium adjustments, with tide gauges as a secondary factor.",
+      "evidence_texts": [
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Flood insurance premiums in the US have risen sharply since 2020.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 41,
+      "query": "how does municipal bond yields relate to steric height",
+      "understanding": "The goal may actually concern municipal bond yields, with steric height as a secondary factor.",
+      "evidence_texts": [
+        "Municipal bond yields in coastal cities reflect climate risk perceptions.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 42,
+      "query": "what is the contribution of steric height versus glacier melt",
+      "understanding": "steric height and glacier melt are the main drivers.",
+      "evidence_texts": [
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 43,
+      "query": "what is the contribution of Antarctica versus steric height",
+      "understanding": "Antarctica and steric height are the main drivers.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Property tax base erosion is a growing concern for coastal municipalities."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "economics"
+      ]
+    },
+    {
+      "turn": 44,
+      "query": "how does insurance premium adjustments relate to ocean heat content",
+      "understanding": "The goal may actually concern insurance premium adjustments, with ocean heat content as a secondary factor.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Flood insurance premiums in the US have risen sharply since 2020.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 45,
+      "query": "how does coastal real estate pricing relate to ocean heat content",
+      "understanding": "The goal may actually concern coastal real estate pricing, with ocean heat content as a secondary factor.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 46,
+      "query": "how does coastal real estate pricing relate to ocean heat content",
+      "understanding": "The goal may actually concern coastal real estate pricing, with ocean heat content as a secondary factor.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 47,
+      "query": "what is the contribution of Antarctica versus Greenland",
+      "understanding": "Antarctica and Greenland are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 48,
+      "query": "how does coastal real estate pricing relate to glacier melt",
+      "understanding": "The goal may actually concern coastal real estate pricing, with glacier melt as a secondary factor.",
+      "evidence_texts": [
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 49,
+      "query": "how does coastal real estate pricing relate to steric height",
+      "understanding": "The goal may actually concern coastal real estate pricing, with steric height as a secondary factor.",
+      "evidence_texts": [
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 50,
+      "query": "how does insurance premium adjustments relate to tide gauges",
+      "understanding": "The goal may actually concern insurance premium adjustments, with tide gauges as a secondary factor.",
+      "evidence_texts": [
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Flood insurance premiums in the US have risen sharply since 2020.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 51,
+      "query": "what is the contribution of ice sheet mass loss versus Antarctica",
+      "understanding": "ice sheet mass loss and Antarctica are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Antarctic ice sheet dynamics remain the largest uncertainty in long-term projections.",
+        "The history of lighthouse construction is a niche academic field."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "sea_level",
+        "noise"
+      ]
+    },
+    {
+      "turn": 52,
+      "query": "how does property tax base erosion relate to Greenland",
+      "understanding": "The goal may actually concern property tax base erosion, with Greenland as a secondary factor.",
+      "evidence_texts": [
+        "Property tax base erosion is a growing concern for coastal municipalities.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 53,
+      "query": "what is the contribution of Greenland versus Antarctica",
+      "understanding": "Greenland and Antarctica are the main drivers.",
+      "evidence_texts": [
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "The history of lighthouse construction is a niche academic field.",
+        "Ocean heat content is a dominant driver of steric sea-level change."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "noise",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 54,
+      "query": "how does municipal bond yields relate to tide gauges",
+      "understanding": "The goal may actually concern municipal bond yields, with tide gauges as a secondary factor.",
+      "evidence_texts": [
+        "Municipal bond yields in coastal cities reflect climate risk perceptions.",
+        "Tide gauge records extend the observational baseline back to the 19th century.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 55,
+      "query": "how does property tax base erosion relate to glacier melt",
+      "understanding": "The goal may actually concern property tax base erosion, with glacier melt as a secondary factor.",
+      "evidence_texts": [
+        "Property tax base erosion is a growing concern for coastal municipalities.",
+        "Glacier melt in the Himalayas and Andes contributes a measurable fraction of sea-level rise.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 56,
+      "query": "how does coastal real estate pricing relate to ocean heat content",
+      "understanding": "The goal may actually concern coastal real estate pricing, with ocean heat content as a secondary factor.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 57,
+      "query": "how does insurance premium adjustments relate to Greenland",
+      "understanding": "The goal may actually concern insurance premium adjustments, with Greenland as a secondary factor.",
+      "evidence_texts": [
+        "Flood insurance premiums in the US have risen sharply since 2020.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 58,
+      "query": "how does coastal real estate pricing relate to Greenland",
+      "understanding": "The goal may actually concern coastal real estate pricing, with Greenland as a secondary factor.",
+      "evidence_texts": [
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Greenland ice sheet mass loss has accelerated since the 1990s, contributing ~0.7 mm/yr.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "economics",
+        "sea_level",
+        "sea_level"
+      ]
+    },
+    {
+      "turn": 59,
+      "query": "how does coastal real estate pricing relate to ocean heat content",
+      "understanding": "The goal may actually concern coastal real estate pricing, with ocean heat content as a secondary factor.",
+      "evidence_texts": [
+        "Ocean heat content is a dominant driver of steric sea-level change.",
+        "Coastal real estate markets are repricing risk in Florida and California.",
+        "Groundwater depletion adds roughly 0.4 mm/yr to sea-level rise."
+      ],
+      "evidence_topics": [
+        "sea_level",
+        "economics",
+        "sea_level"
+      ]
+    }
+  ]
+}

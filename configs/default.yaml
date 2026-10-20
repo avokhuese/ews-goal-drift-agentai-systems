@@ -1,0 +1,20 @@
+agent:
+  max_turns: 60
+  original_goal: "Identify the primary drivers of sea-level rise over the last 50 years."
+  top_k: 3
+  drift_pressure: 0.9        # only used by the mock LLM: how strongly the loop drifts
+  seed: 42
+
+signals:
+  window: 15
+  indicators: [variance, autocorrelation, skewness]
+  drift_onset_threshold: 0.30
+  drift_onset_window: 5
+
+ews:
+  kendall_window: 20
+  detrend: gaussian
+  bandwidth: 4.0
+
+output:
+  dir: results

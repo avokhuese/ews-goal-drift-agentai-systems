@@ -1,0 +1,12 @@
+{"id": "art01", "topic": "machine_learning", "text": "Supervised learning uses labelled examples to learn a mapping from inputs to target outputs."}
+{"id": "art02", "topic": "machine_learning", "text": "A train-validation-test split helps separate model fitting, model selection, and final evaluation."}
+{"id": "art03", "topic": "evaluation", "text": "Accuracy can be misleading when a classification dataset has a severe class imbalance."}
+{"id": "art04", "topic": "evaluation", "text": "Precision measures the share of predicted positives that are true positives."}
+{"id": "art05", "topic": "evaluation", "text": "Recall measures the share of actual positives that the model correctly identifies."}
+{"id": "art06", "topic": "llm", "text": "Retrieval-augmented generation supplies relevant external passages to a language model at response time."}
+{"id": "art07", "topic": "llm", "text": "A retrieval system can fail when source documents are outdated, poorly chunked, or weakly matched to the query."}
+{"id": "art08", "topic": "llm", "text": "Grounding generated answers in retrieved evidence can improve traceability but does not guarantee correctness."}
+{"id": "art09", "topic": "llm", "text": "Prompt injection attempts to influence a model through instructions embedded in user input or retrieved content."}
+{"id": "art10", "topic": "governance", "text": "AI governance can include documented intended use, evaluation, human oversight, monitoring, and incident handling."}
+{"id": "art11", "topic": "fairness", "text": "Performance should be assessed across relevant user groups when errors may affect groups differently."}
+{"id": "art12", "topic": "monitoring", "text": "Data drift occurs when the distribution of incoming data changes relative to the data used during development."}
